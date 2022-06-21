@@ -1,0 +1,23 @@
+{
+  "name": "docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dalda": "npx playwright test --project=chromium --reporter=list",
+    "po": "node ar.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.20.2",
+    "allure-commandline": "2.13.8",
+    "allure-playwright": "^2.0.0-beta.14",
+    "clipboardy": "^2.3.0",
+    "dotenv": "^10.0.0",
+    "dotenv-flow": "3.2.0",
+    "experimental-allure-playwright": "0.0.3",
+    "playwright": "^1.20.2"
+  }
+}
