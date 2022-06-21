@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dalda": "npx playwright test --project=chromium --reporter=list",
-    "po": "node ar.js"
+    "test": "npx playwright test --project=chromium --reporter=list"
   },
   "keywords": [],
   "author": "",
