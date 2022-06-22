@@ -5,4 +5,4 @@ RUN pwd
 RUN ls
 
 # Run playwright test
-CMD [ "pwd"]
+CMD [ "ls"]
