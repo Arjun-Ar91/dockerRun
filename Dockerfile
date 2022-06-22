@@ -1,6 +1,5 @@
 FROM mcr.microsoft.com/playwright:v1.20.2-focal
 # Run playwright test
-RUN cd /workspace/
 WORKDIR /workspace/
 RUN npm install
 
