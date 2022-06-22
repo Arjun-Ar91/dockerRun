@@ -1,7 +1,8 @@
 FROM mcr.microsoft.com/playwright:v1.20.2-focal
 # Run playwright test
-RUN mkdir /home/e2eTests && cd /home/e2eTests
-WORKDIR /home/e2eTests
+RUN cd /workspace/
+WORKDIR /workspace/
+RUN npm install
 
 
 # Run playwright test
