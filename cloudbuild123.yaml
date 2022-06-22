@@ -5,7 +5,7 @@ steps:
 
   - name: 'gcr.io/cloud-builders/docker'
       id: 'push-e2e-image'
-      args: [ 'push', 'eu.gcr.io/$PROJECT_ID/$REPO_NAME:$SHORT_SHA','.' ]
+      args: [ 'push', 'eu.gcr.io/$PROJECT_ID/$REPO_NAME:$SHORT_SHA']
 
   - name: 'eu.gcr.io/$PROJECT_ID/$REPO_NAME:$SHORT_SHA'
       id: 'run-e2e-test'
