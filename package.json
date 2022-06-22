@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test --project=chromium --reporter=list",
-    "download": "npx playwright install"
+    "download": "npx playwright install",
+    "dad": "node tests/example.spec.js"
   },
   "keywords": [],
   "author": "",
