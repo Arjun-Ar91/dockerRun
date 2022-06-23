@@ -1,4 +1,4 @@
-// const { test, expect } = require('@playwright/test');
+const { test, expect } = require('@playwright/test');
 var os = require('os');
 
 test('basic test', async ({ page }) => {
