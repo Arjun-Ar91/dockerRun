@@ -7,4 +7,4 @@ RUN npm install
 RUN npx playwright install
 
 # Run playwright test
-CMD [ "npm", "run", "test" ]
+CMD [ "npm", "run", "dad" ]
