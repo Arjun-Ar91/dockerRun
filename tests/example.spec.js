@@ -7,9 +7,7 @@ test('basic test', async ({ page }) => {
   await expect(title).toHaveText('Playwright1');
     console.log("ARJUN Done Buddy", new Date().getHours(),"::", new Date().getMinutes());
 
-    console.log(os.type()); // "Windows_NT"
     console.log(os.release()); // "10.0.14393"
-    console.log(os.platform()); // "win32"
     console.log(os.version()); // "win32"
  });
 
