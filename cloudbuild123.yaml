@@ -4,7 +4,4 @@ steps:
     args: ['install']
   - name: node
     entrypoint: npm
-    args: ['run', 'download']
-  - name: node
-    entrypoint: npm
-    args: [ 'run', 'test' ]
+    args: [ 'run', 'dad' ]
