@@ -1,9 +1,10 @@
 FROM mcr.microsoft.com/playwright:v1.20.2-focal
 # Run playwright test
-RUN cd /workspace/dockerRun
-WORKDIR /workspace/dockerRun
+RUN cd /workspace/
+WORKDIR /workspace/
+COPY . .
 RUN npm install
-
+RUN npx playwright install
 
 # Run playwright test
-CMD [ "ls"]
+CMD [ "npm", "run", "test" ]
