@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 var os = require('os');
 
-test('basic test', async ({  }) => {
+test('basic test', async ({ page }) => {
   await page.goto('https://playwright.dev/');
   const title = page.locator('.navbar__inner .navbar__title');
   await expect(title).toHaveText('Playwright');
