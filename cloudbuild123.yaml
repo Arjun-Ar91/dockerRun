@@ -4,8 +4,8 @@ steps:
     args: ['build', '-t', 'eu.gcr.io/$PROJECT_ID/arj:$SHORT_SHA','.']
 
   - name: 'gcr.io/cloud-builders/docker'
-      id: 'push-e2e-image'
-      args: [ 'push', 'eu.gcr.io/$PROJECT_ID/arj:$SHORT_SHA']
+    id: 'push-e2e-image'
+    args: [ 'push', 'eu.gcr.io/$PROJECT_ID/arj:$SHORT_SHA']
 
   - name: 'eu.gcr.io/$PROJECT_ID/arj:$SHORT_SHA'
-      id: 'run-e2e-test'
+    id: 'run-e2e-test'
